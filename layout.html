@@ -1,10 +1,40 @@
----
-title: Layout page
-layout: ./app/layout.ejs
-engine: ejs
-current: layout page
----
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md bg-light py-4 position-fixed top-0 w-100">
+      <div class="container-fluid">
+        <a class="navbar-brand me-0 d-block" href="./index.html"></a>
+        <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mt-3 mt-md-0" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-lg-0 align-items-center">
+            <li class="nav-item me-md-5">
+              <a class="nav-link" href="#">首頁</a>
+            </li>
+            <li class="nav-item me-md-5">
+              <a class="nav-link" href="#">課程介紹</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hasIcon" href="#"><span class="material-symbols-outlined"> account_circle </span>登入</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
 <div class="container">
   <h1>H1 header</h1>
   <h2>H2 header</h2>
@@ -80,3 +110,15 @@ current: layout page
     </div>
   </div>
 </div>
+
+    <footer class="footer bg-gray-300">
+      <div class="container text-center p-3 p-md-4">
+        <p class="font--azeret text-gray-400 mb-0">Coding Home © 2022 All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>

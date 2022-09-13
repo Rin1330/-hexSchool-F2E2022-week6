@@ -2,3 +2,30 @@
   font-family: 'Azeret Mono', monospace;
   // font-family: 'Noto Sans TC', sans-serif;  
 }
+
+.text--border{
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: $primary;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -12px;
+  }
+  &.text--border--left {
+    &::before {
+      left: 0;
+      transform: translateX(0);
+    }
+  }
+}
+
+section {
+  padding: 2.5rem 0;
+  @include media-breakpoint-up(lg) {
+    padding: 5rem 0;
+  }
+}

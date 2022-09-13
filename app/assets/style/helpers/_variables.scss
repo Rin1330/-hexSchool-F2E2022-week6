@@ -11,7 +11,7 @@ $gray-100: #2D2D2D; //#f8f9fa !default;
 $gray-200: #202020; //#e9ecef !default;
 $gray-300: #1A1A1A; //#dee2e6 !default;
 $gray-400: #909090; //#ced4da !default;
-$gray-500: #adb5bd !default;
+$gray-500: #1C1C1C; //#adb5bd !default;
 $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
@@ -64,6 +64,8 @@ $colors: (
   "gray":       $gray-100,
   "gray-200":   $gray-200,
   "gray-300":   $gray-300,
+  "gray-400":   $gray-400,
+  "gray-500":   $gray-500,
 ) !default;
 // scss-docs-end colors-map
 
@@ -80,6 +82,7 @@ $gray-100:      $gray-100 !default;
 $gray-200:      $gray-200 !default;
 $gray-300:      $gray-300 !default; 
 $gray-400:      $gray-400 !default; 
+$gray-500:      $gray-500 !default; 
 // $gary:          $gary-100 !default;
 // scss-docs-end theme-color-variables
 
@@ -97,6 +100,7 @@ $theme-colors: (
   "gray-200":   $gray-200,
   "gray-300":   $gray-300,
   "gray-400":   $gray-400,
+  "gray-500":   $gray-500,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -259,17 +263,30 @@ $gradient: linear-gradient(90deg, $primary 50%, $secondary 50% ) !default;
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
 $spacers: (
+  // 0: 0,
+  // 1: $spacer * .25,      // 4px
+  // 2: $spacer * .5,       // 8px
+  // 3: $spacer,            // 16px
+  // 4: $spacer * 1.5,      // 24px
+  // 5: $spacer * 2,        // 32px
+  // 6: $spacer * 2.5,      // 40px
+  // 7: $spacer * 3,        // 48px
+  // 8: $spacer * 3.5,      // 56px
+  // 9: $spacer * 4,        // 64px
+  // 10: $spacer * 5,       // 80px
+
   0: 0,
   1: $spacer * .25,      // 4px
   2: $spacer * .5,       // 8px
-  3: $spacer,            // 16px
-  4: $spacer * 1.5,      // 24px
-  5: $spacer * 2,        // 32px
-  6: $spacer * 2.5,      // 40px
-  7: $spacer * 3,        // 48px
-  8: $spacer * 3.5,      // 56px
-  9: $spacer * 4,        // 64px
-  10: $spacer * 5,       // 80px
+  3: $spacer * .75,      // 12px
+  4: $spacer,            // 16px
+  5: $spacer * 1.5,      // 24px
+  6: $spacer * 2,        // 32px
+  7: $spacer * 2.5,      // 40px
+  8: $spacer * 3,        // 48px
+  9: $spacer * 3.5,      // 56px
+  10: $spacer * 4,       // 64px
+  11: $spacer * 5,       // 80px
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -1103,7 +1120,7 @@ $card-spacer-y:                     $spacer !default;
 $card-spacer-x:                     $spacer !default;
 $card-title-spacer-y:               $spacer * .5 !default;
 $card-border-width:                 $border-width !default;
-$card-border-radius:                $border-radius !default;
+$card-border-radius:                12px; //$border-radius !default;
 $card-border-color:                 rgba($black, .125) !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;

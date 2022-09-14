@@ -15210,6 +15210,10 @@ section {
   font-size: 80px;
 }
 
+.buttonWrap {
+  overflow-x: scroll;
+}
+
 .buttonWrap .btn {
   border-radius: 8px;
   -webkit-transition: all .3s ease 0s;
@@ -15223,7 +15227,7 @@ section {
   background-color: inherit;
 }
 
-.courseList li {
+.courseList li > div {
   border-radius: 24px;
 }
 

@@ -40,18 +40,19 @@ var feedbackSwiper = new Swiper('.section-feedback .swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
   }
-});
-var buttonSwiper = new Swiper(".buttonWrap.swiper", {
-  speed: 1500,
-  // loop: true,
-  spaceBetween: 16,
-  slidesPerView: 6,
-  //多欄
-  breakpoints: {
-    768: {// slidesPerView: 6
-    },
-    992: {// slidesPerView: 6
-    }
-  }
-});
+}); // const buttonSwiper = new Swiper(".buttonWrap.swiper", {
+//   speed: 1500,
+//   // loop: true,
+//   spaceBetween: 16,
+//   slidesPerView: 6,
+//   //多欄
+//   breakpoints: {
+//       768: {
+//           // slidesPerView: 6
+//       },
+//       992: {
+//           // slidesPerView: 6
+//       }
+//   }
+// });
 //# sourceMappingURL=all.js.map

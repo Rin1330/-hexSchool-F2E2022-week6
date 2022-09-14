@@ -10,9 +10,12 @@ var swiper = new Swiper(".course-swiper", {
   // speed: 1500,
   loop: true,
   spaceBetween: 16,
-  slidesPerView: 3,
+  slidesPerView: 2,
   //多欄
   breakpoints: {
+    576: {
+      slidesPerView: 4
+    },
     768: {
       slidesPerView: 6
     },

@@ -5,10 +5,10 @@ $(function() {
 
 const courseSwiper = new Swiper(".course-swiper", {
   autoplay: {
-      // disableOnInteraction: false,
-      // delay: 0
+      disableOnInteraction: false,
+      delay: 0
   },
-  // speed: 1500,
+  speed: 1500,
   loop: true,
   spaceBetween: 16,
   slidesPerView: 2,
@@ -24,7 +24,6 @@ const courseSwiper = new Swiper(".course-swiper", {
           slidesPerView: 9
       }
   }
-
 });
 
 const feedbackSwiper = new Swiper('.section-feedback .swiper', {
@@ -45,3 +44,4 @@ const feedbackSwiper = new Swiper('.section-feedback .swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+

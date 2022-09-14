@@ -14632,6 +14632,19 @@ section {
   }
 }
 
+.inside-content {
+  background-color: #1C1C1C;
+  margin-top: 72px;
+  min-height: calc(100vh - 72px);
+}
+
+@media (min-width: 768px) {
+  .inside-content {
+    margin-top: 90px;
+    min-height: calc(100vh - 90px);
+  }
+}
+
 .custom-btn {
   padding: .5rem 2rem;
   color: #fff;
@@ -15195,6 +15208,42 @@ section {
 
 .section-joinus .icon {
   font-size: 80px;
+}
+
+.buttonWrap .btn {
+  border-radius: 8px;
+  -webkit-transition: all .3s ease 0s;
+  -o-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+}
+
+.buttonWrap .btn:hover {
+  border: 1px solid #62DB54;
+  color: #62DB54;
+  background-color: inherit;
+}
+
+.courseList li {
+  border-radius: 24px;
+}
+
+.courseList__icon {
+  width: 100px;
+  height: 100px;
+}
+
+.courseList h3, .courseList .h3 {
+  line-height: 1.458;
+}
+
+.courseList .fs-2 {
+  line-height: 1.156;
+}
+
+.courseList button {
+  min-width: 140px;
+  border-radius: 8px;
+  line-height: 1.444;
 }
 
 /*# sourceMappingURL=all.css.map */

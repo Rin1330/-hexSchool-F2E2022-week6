@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>course</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md bg-gray-100 py-5 position-fixed top-0 w-100">
+      <div class="container">
+        <a class="navbar-brand me-0 d-block" href="./index.html"></a>
+        <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mt-4 mt-md-0" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-lg-0 align-items-center">
+            <li class="nav-item me-md-6">
+              <a class="nav-link" href="./index.html">首頁</a>
+            </li>
+            <li class="nav-item me-md-6">
+              <a class="nav-link" href="./course.html">課程介紹</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hasIcon" href="#"><span class="material-symbols-outlined"> account_circle </span>登入</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="inside-content bg-gray-500">
+      <div class="container">
+        <div class="buttonWrap pt-7 pb-8 d-flex flex-wrap-nowrap overflow-scroll">
+          <button type="button" class="btn btn-outline-light fs-7 text-center py-2 px-6 me-4 d-inline-block selected">所有課程</button>
+          <button type="button" class="btn btn-outline-light fs-7 text-center py-2 px-6 me-4 d-inline-block">行動應用開發</button>
+          <button type="button" class="btn btn-outline-light fs-7 text-center py-2 px-6 me-4 d-inline-block">資料庫/資料科學</button>
+          <button type="button" class="btn btn-outline-light fs-7 text-center py-2 px-6 me-4 d-inline-block">前端語言</button>
+          <button type="button" class="btn btn-outline-light fs-7 text-center py-2 px-6 me-4 d-inline-block">後端語言</button>
+          <button type="button" class="btn btn-outline-light fs-7 text-center py-2 px-6 me-4 d-inline-block">作業系統與伺服器</button>
+        </div>
+      </div>
+      
+
+<div class="container">
+  <ul class="courseList row list-unstyled gy-6 text-white justify-content-center mb-0">
+    <li class="col-lg-10 p-0 bg-gray-100">
+      <div class="d-flex h-100 flex-column flex-lg-row p-6 p-lg-5 align-items-lg-center justify-content-between">
+        <div class="d-flex flex-column flex-lg-row mb-5 mb-lg-0">
+          <div class="text-center mb-5 mb-lg-0 p-lg-5">
+            <img src="./assets/images/teacher01.jpg" alt="" class="fluid-img courseList__icon rounded-circle mb-1">
+            <p class="mb-0">Belinda</p>
+          </div>
+          <div class="p-lg-5">
+            <h3 class="fw-bold mb-1">基礎前端 - HTML</h3>
+            <p class="text-primary mb-2">前端語言</p>
+            <p class="mb-0">帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子，輕鬆進入網頁架設的世界，完成一個基礎的網頁架設。</p>
+          </div>
+        </div>
+        <div class="text-center p-lg-5">
+          <p class="mb-1">50分鐘</p>
+          <p class="fs-2 mb-4">NT$1600</p>
+          <div class="d-flex d-lg-block justify-content-center align-items-center flex-lg-column">
+          <button type="button" class="btn btn-outline-light fs-6 text-center py-2 px-6 me-2 me-lg-0 mb-lg-2 d-inline-block">所有課程</button>
+          <button type="button" class="custom-btn fs-6 text-center text-white py-2 px-6 border-0 d-inline-block">立即預約</button>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+    </div>
+
+    <footer class="footer bg-gray-300">
+      <div class="container text-center p-4 p-md-5">
+        <p class="font--azeret text-gray-400 mb-0">Coding Home © 2022 All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>

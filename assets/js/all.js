@@ -4,10 +4,11 @@ $(function () {
   console.log('Hello Bootstrap5');
 });
 var courseSwiper = new Swiper(".course-swiper", {
-  autoplay: {// disableOnInteraction: false,
-    // delay: 0
+  autoplay: {
+    disableOnInteraction: false,
+    delay: 0
   },
-  // speed: 1500,
+  speed: 1500,
   loop: true,
   spaceBetween: 16,
   slidesPerView: 2,

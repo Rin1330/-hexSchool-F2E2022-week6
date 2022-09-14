@@ -14748,7 +14748,7 @@ section {
 
 .sectionBanner {
   height: 336px;
-  background-image: url("../images/bg_home_mobile.jpg");
+  background-image: url("/images/bg_home_mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -14759,7 +14759,7 @@ section {
   .sectionBanner {
     height: 680px;
     margin-top: 90px;
-    background-image: url("../images/bg_home.jpg");
+    background-image: url("images/bg_home.jpg");
   }
 }
 

@@ -78,7 +78,6 @@ function vendorsJs() {
     .pipe(gulp.dest(envOptions.vendors.path));
 }
 
-
 function browser() {
   browserSync.init({
     server: {

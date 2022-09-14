@@ -1,4 +1,4 @@
-.sectionBanner{
+.sectionBanner {
   height: 336px;
   background-image: url('../images/bg_home_mobile.jpg');
   background-repeat: no-repeat;
@@ -13,7 +13,7 @@
   .banner {
     padding: 2rem 1rem;
     border: 1px solid #fff;
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-down(md) {
       max-width: 650px;
       padding: 3rem 1rem;
     }
@@ -33,7 +33,7 @@
       font-size: 3rem;
     }
   }
-  p{
+  p {
     font-size: 0.875rem;
     line-height: 1.429;
     @include media-breakpoint-up(md) {
@@ -54,20 +54,18 @@
   .card {
     background-color: transparent;
     border: 1px solid transparent;
-    transition: all .3s ease 0s;
+    transition: all 0.3s ease 0s;
     &:hover {
       background-color: $gray-200;
       border: 1px solid $primary;
       span {
-        @include text-gradient-y
+        @include text-gradient-y;
       }
     }
     span {
-      color: $white;
       font-size: 50px;
     }
     p {
-      color: $white;
       line-height: 1.444;
     }
   }
@@ -88,7 +86,7 @@
       left: 40px;
       top: -32px;
       background-color: $gray-500;
-      padding: .25rem .5rem;
+      padding: 0.25rem 0.5rem;
       z-index: 50;
     }
   }
@@ -104,7 +102,7 @@
   .card {
     height: 100%;
     border: 1px solid transparent;
-    transition: border .3s ease 0s;
+    transition: border 0.3s ease 0s;
     &:hover {
       border: 1px solid $primary;
     }
@@ -124,5 +122,233 @@
   }
   h4 {
     line-height: 1.45;
+  }
+}
+
+.section-info {
+  li {
+    position: relative;
+    z-index: 1;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.7);
+      transition: background 0.3s ease 0s;
+    }
+    &:hover {
+      &:after {
+        background: rgba(0, 0, 0, 0);
+      }
+      .card-body {
+        opacity: 1;
+        .icon {
+          color: $primary;
+        }
+      }
+    }
+    .card {
+      height: 263px;
+      @include background-center;
+      background-size: cover;
+      @include media-breakpoint-up(md) {
+        height: 307px;
+      }
+      @include media-breakpoint-up(lg) {
+        height: 615px;
+      }
+    }
+    &:nth-child(1) > .card {
+      background-image: url('../../../assets/images/info01.jpg');
+    }
+    &:nth-child(2) > .card {
+      background-image: url('../../../assets/images/info02.jpg');
+    }
+    &:nth-child(3) > .card {
+      background-image: url('../../../assets/images/info03.jpg');
+    }
+    &:nth-child(4) > .card {
+      background-image: url('../../../assets/images/info04.jpg');
+    }
+    .card-body {
+      z-index: 5;
+      opacity: 0.8;
+      transition: all 0.3s ease 0s;
+      .icon {
+        font-size: 2rem;
+        color: $white;
+      }
+      h3 {
+        line-height: 1.458;
+        @include media-breakpoint-down(lg) {
+          &.text--border::before {
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+      }
+      p {
+        line-height: 1.444;
+      }
+    }
+  }
+}
+
+.section-article {
+  h5 {
+    line-height: 1.444;
+  }
+
+  a {
+    line-height: 1.167;
+  }
+  .squareRounded {
+    display: none;
+    width: 32px;
+    height: 32px;
+    transition: all 0.3s ease 0s;
+    &-topLeft {
+      border-top: 2px solid #62db54;
+      border-left: 2px solid #62db54;
+      border-top-left-radius: 10px;
+    }
+    &-topRight {
+      border-top: 2px solid #62db54;
+      border-right: 2px solid #62db54;
+      border-top-right-radius: 10px;
+    }
+    &-bottomLeft {
+      border-bottom: 2px solid #62db54;
+      border-left: 2px solid #62db54;
+      border-bottom-left-radius: 10px;
+    }
+    &-bottomRight {
+      border-bottom: 2px solid #62db54;
+      border-right: 2px solid #62db54;
+      border-bottom-right-radius: 10px;
+    }
+  }
+  .card:hover {
+    .squareRounded {
+      display: block;
+    }
+  }
+}
+
+.section-feedback {
+  height: auto;
+  @include background-center;
+  background-image: url('../../../assets/images/bg_share.jpg');
+  background-size: cover;
+  transition: all 0.3s ease 0s;
+  @include media-breakpoint-up(xl) {
+    height: 773px;
+  }
+  
+  .swiper {
+    height: 429px;
+    @include media-breakpoint-down(xl) {
+      height: auto;
+    }
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      content: '';
+    }
+    &-button-next,
+    &-button-prev {
+      position: unset;
+      width: 24px;
+      height: 24px;
+      margin-top: 0;
+      color: #62db54;
+    }
+    .swiper-pagination {
+      position: unset;
+      width: auto;
+      .swiper-pagination-bullet {
+        background-color: #62db54;
+        opacity: initial;
+        &-active {
+          width: 16px;
+          border-radius: 100px;
+        }
+      }
+    }
+    &-buttons {
+      bottom: 0;
+      left: 30%;
+      transform: translateX(-50%);
+      z-index: 10;
+      position: absolute;
+      @include media-breakpoint-down(xl) {
+        position: initial;
+        transform: none;
+        left: 0;
+      }
+    }
+  }
+  .swiper-img {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    max-width: 525px;
+    border-radius: 24px;
+    height: 90%;
+    @include media-breakpoint-down(xl) {
+      position: relative;
+      max-width: 100%;
+      top: inherit;
+      left: inherit;
+      height: auto;
+      margin-bottom: 3rem;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 1px solid #7c7e77;
+      border-radius: 24px;
+      left: -10px;
+      top: 10px;
+      z-index: -1;
+    }
+    img {
+      border-radius: 24px;
+    }
+  }
+  .card {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 416px;
+    border-radius: 24px 24px 24px 0;
+    @include media-breakpoint-down(xl) {
+      position: relative;
+      max-width: 100%;
+      margin-bottom: 2rem;
+    }
+    .card-img {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      right: 32px;
+      top: -48px;
+      transition: all .3s ease 0s;
+      @include media-breakpoint-down(xl) {
+        width: 80px;
+        height: 80px;
+        top: -32px;
+      }
+    }
+  }
+}
+
+.section-joinus {
+  .icon {
+    font-size: 80px;
   }
 }

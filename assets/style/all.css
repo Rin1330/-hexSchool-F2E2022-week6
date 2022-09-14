@@ -14660,7 +14660,7 @@ section {
 .navbar .navbar-brand {
   width: 24px;
   height: 24px;
-  background-image: url("/assets/images/logo2.svg");
+  background-image: url("../images/logo2.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
@@ -14671,7 +14671,7 @@ section {
 
 @media (min-width: 768px) {
   .navbar .navbar-brand {
-    background-image: url("/assets/images/logo.svg");
+    background-image: url("../images/logo.svg");
     width: 175px;
     height: 42px;
   }
@@ -14957,19 +14957,19 @@ section {
 }
 
 .section-info li:nth-child(1) > .card {
-  background-image: url("../../../assets/images/info01.jpg");
+  background-image: url("../images/info01.jpg");
 }
 
 .section-info li:nth-child(2) > .card {
-  background-image: url("../../../assets/images/info02.jpg");
+  background-image: url("../images/info02.jpg");
 }
 
 .section-info li:nth-child(3) > .card {
-  background-image: url("../../../assets/images/info03.jpg");
+  background-image: url("../images/info03.jpg");
 }
 
 .section-info li:nth-child(4) > .card {
-  background-image: url("../../../assets/images/info04.jpg");
+  background-image: url("../images/info04.jpg");
 }
 
 .section-info li .card-body {
@@ -15051,7 +15051,7 @@ section {
   height: auto;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-image: url("../../../assets/images/bg_share.jpg");
+  background-image: url("../images/bg_share.jpg");
   background-size: cover;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;

@@ -14660,7 +14660,7 @@ section {
 .navbar .navbar-brand {
   width: 24px;
   height: 24px;
-  background-image: url("../../../assets/images/logo2.svg");
+  background-image: url("/assets/images/logo2.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
@@ -14671,7 +14671,7 @@ section {
 
 @media (min-width: 768px) {
   .navbar .navbar-brand {
-    background-image: url("../../../assets/images/logo.svg");
+    background-image: url("/assets/images/logo.svg");
     width: 175px;
     height: 42px;
   }

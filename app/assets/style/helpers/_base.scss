@@ -37,7 +37,9 @@ section {
 .inside-content {
   background-color: #1C1C1C;
   margin-top: 72px;
+  min-height: calc(100vh - 72px);
   @include media-breakpoint-up(md) {
     margin-top: 90px;
+    min-height: calc(100vh - 90px);
   }
 }

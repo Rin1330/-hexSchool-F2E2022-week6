@@ -45,7 +45,6 @@
 
 .section-handByHand {
   h2 {
-    line-height: 1.429;
     @include media-breakpoint-up(lg) {
       &::before {
         left: 25px;
@@ -95,8 +94,35 @@
   }
 }
 
-.program-language {
+.section-program-language {
   .swiper-slide {
     line-height: 1.444;
+  }
+}
+
+.section-course {
+  .card {
+    height: 100%;
+    border: 1px solid transparent;
+    transition: border .3s ease 0s;
+    &:hover {
+      border: 1px solid $primary;
+    }
+    .card-body {
+      display: flex;
+      flex-direction: column;
+    }
+    .card-footer {
+      .price {
+        line-height: 1.156;
+      }
+    }
+  }
+  img {
+    display: block;
+    width: 100px;
+  }
+  h4 {
+    line-height: 1.45;
   }
 }

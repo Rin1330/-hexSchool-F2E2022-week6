@@ -3,7 +3,7 @@
 $(function () {
   console.log('Hello Bootstrap5');
 });
-var swiper = new Swiper(".course-swiper", {
+var courseSwiper = new Swiper(".course-swiper", {
   autoplay: {// disableOnInteraction: false,
     // delay: 0
   },
@@ -22,6 +22,22 @@ var swiper = new Swiper(".course-swiper", {
     992: {
       slidesPerView: 9
     }
+  }
+});
+var feedbackSwiper = new Swiper('.section-feedback .swiper', {
+  // Optional parameters
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination'
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
   }
 });
 //# sourceMappingURL=all.js.map

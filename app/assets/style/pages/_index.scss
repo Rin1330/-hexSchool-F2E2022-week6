@@ -162,16 +162,16 @@
       }
     }
     &:nth-child(1) > .card {
-      background-image: url('../../../assets/images/info01.jpg');
+      background-image: url('../images/info01.jpg');
     }
     &:nth-child(2) > .card {
-      background-image: url('../../../assets/images/info02.jpg');
+      background-image: url('../images/info02.jpg');
     }
     &:nth-child(3) > .card {
-      background-image: url('../../../assets/images/info03.jpg');
+      background-image: url('../images/info03.jpg');
     }
     &:nth-child(4) > .card {
-      background-image: url('../../../assets/images/info04.jpg');
+      background-image: url('../images/info04.jpg');
     }
     .card-body {
       z-index: 5;
@@ -241,7 +241,7 @@
 .section-feedback {
   height: auto;
   @include background-center;
-  background-image: url('../../../assets/images/bg_share.jpg');
+  background-image: url('../images/bg_share.jpg');
   background-size: cover;
   transition: all 0.3s ease 0s;
   @include media-breakpoint-up(xl) {

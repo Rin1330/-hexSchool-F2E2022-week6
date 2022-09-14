@@ -13,13 +13,13 @@
   .navbar-brand {
     width: 24px;
     height: 24px;
-    background-image: url('../../../assets/images/logo2.svg');
+    background-image: url('../images/logo2.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50% 50%;
     transform: translate( -50% -50%);
     @include media-breakpoint-up(md) {
-      background-image: url('../../../assets/images/logo.svg');
+      background-image: url('../images/logo.svg');
       width: 175px;
       height: 42px;
     }

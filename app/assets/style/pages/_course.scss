@@ -1,7 +1,8 @@
 .buttonWrap {
-  overflow-x: scroll;
+  // display: flex;
   .btn{
-    // display: inline-block;
+    display: inline-block;
+    width: auto;
     border-radius: 8px;
     transition: all .3s ease 0s;
     &:hover{
@@ -10,7 +11,12 @@
       background-color: inherit;
     }
   }
+  .swiper-slide {
+    width: auto!important;
+  }
 }
+
+
 
 .courseList {
   li > div{

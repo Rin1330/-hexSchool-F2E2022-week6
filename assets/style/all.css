@@ -15210,11 +15210,9 @@ section {
   font-size: 80px;
 }
 
-.buttonWrap {
-  overflow-x: scroll;
-}
-
 .buttonWrap .btn {
+  display: inline-block;
+  width: auto;
   border-radius: 8px;
   -webkit-transition: all .3s ease 0s;
   -o-transition: all .3s ease 0s;
@@ -15225,6 +15223,10 @@ section {
   border: 1px solid #62DB54;
   color: #62DB54;
   background-color: inherit;
+}
+
+.buttonWrap .swiper-slide {
+  width: auto !important;
 }
 
 .courseList li > div {
